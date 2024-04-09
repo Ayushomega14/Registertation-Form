@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-form">
+            <form action="ss.html" class="register-form" method="post">
+                <h2 class="title">Registration</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-calendar"></i>
+                    <input type="date" id="dateOfBirth" placeholder="Date of Birth" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-venus-mars"></i>
+                    <select name="gender" id="gender" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="Email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-field">
+                    <i class="fab fa-linkedin"></i>
+                    <input type="url" id="linkedinProfileURL" placeholder="LinkedIn Profile URL">
+                </div>
+                <div class="input-field">
+                    <i class="fab fa-github"></i>
+                    <input type="url" id="githubProfileURL" placeholder="GitHub Profile URL">
+                </div>
+                <input type="submit" value="Register" class="btn">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
