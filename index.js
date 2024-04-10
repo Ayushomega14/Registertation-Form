@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true}))
 
-mongoose.connect('mongodb://localhost:27017/registrationDB',)
+mongoose.connect('mongodb://localhost:27017/registerDB',)
 var db=mongoose.connection;
 db.on('error',()=>console.log("Error in Connecting to Database"))
 db.once('open',()=>console.log("Connected to Database"))
@@ -42,8 +42,8 @@ app.post('/signup', (req, res) => {
         }
         console.log("Record inserted Successfully")
     });
-    return res.redirect('ss.html')
-});
+    return res.redirect('signup.html')
+})
 
 app.get("/",(req, res) => {
     res.set({
